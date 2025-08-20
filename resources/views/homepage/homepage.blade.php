@@ -4,8 +4,6 @@
     <meta charset="UTF-8">
     <title>FTMS - Homepage</title>
     <link rel="icon" type="image/avif" href="{{ asset('images/icon.avif') }}">
-=======
-    <title>Homepage</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="{{ asset('css/main.css') }}">
 </head>
@@ -21,10 +19,6 @@
                 <div class = "right-links">
                     <button>HOME</button>
                     <button>NEWS</button>
-                </div>
-                <div class = "right-links">
-                    <h2>HOME</h2>
-                    <h2>NEWS</h2>
                 </div>
             </div>
         
