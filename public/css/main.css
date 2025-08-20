@@ -1,0 +1,130 @@
+/*------------SECTION_SCROLLING------------*/
+/*THERES 2 PAGES, DONT TOUCH!*/
+.section{
+    height: 100vh;
+    scroll-snap-align: start;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+.section-1{
+    display: flex;
+    flex-direction:column;
+}
+.header-1{
+    flex: 0 0 8%;
+}
+
+.upper-part{
+    flex: 0 0 92%;
+}
+
+.section-2{
+    display: flex;
+    flex-direction:column;
+}
+
+.middle-part {
+    display:flex;
+    flex: 0 0 75%;
+}
+.footer {
+    flex: 0 0 25%;
+}
+
+/*------------HEADER------------*/
+/*HEADER IS SPLIT INTO 3 PARTS, DONT TOUCH!*/
+header, footer { 
+    display: flex;
+    flex-direction: row;
+    background: #222; 
+    color: #fff; 
+    padding: 20px; 
+    text-align: center; 
+}
+
+#header_left_container, #header_right_container {
+    flex: 1 1 0;
+}
+#header_center_container {
+    flex: 0 1 300px;
+}
+
+
+/*Left Header*/
+#header_left_container {
+    display: flex;
+    text-align: left;
+}
+#header_left_container .right-links{
+    display: flex;
+    margin-left:auto;
+    gap: 20px;
+}
+
+/*Center Header*/
+#header_center_container {
+    text-align: center;
+}
+
+
+/*Right Header*/
+#header_right_container {
+    display: flex;
+    text-align: right;
+}
+#header_right_container .left-links{
+    display: flex;
+    margin-right:auto;
+    gap: 20px;
+}
+#header_right_container .right-links{
+    display: flex;
+    margin-left:auto;
+    gap: 20px;
+}
+
+
+
+/*------------BODY------------*/
+html{
+    scroll-snap-type: y mandatory;
+    overflow-x: hidden;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    background: #222;
+}
+
+html, body { 
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif; 
+}
+
+/*.container { 
+    width: 100%;
+    
+}*/
+
+/*CONTENT BELOW THE HEADER, DONT TOUCH OR EXPLOSION!*/
+.upper-part, .middle-part { 
+    background: #f4f4f4;
+    
+    /*padding: 0px;*/ 
+    /*margin-bottom: 20px;*/ 
+    border-radius: 8px; }
+
+.footer{
+    background: #222;
+}
+
+.middle-part .middle-left{
+    background: #6b6b6b;
+    flex: 0 0 60%;
+}
+.middle-part .middle-right{
+    flex: 0 0 40%;
+    background: #6b6b6b;
+}

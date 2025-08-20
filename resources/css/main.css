@@ -1,0 +1,42 @@
+header, footer { 
+    display: flex;
+    flex-direction: row;
+    background: #222; 
+    color: #fff; 
+    padding: 20px; 
+    text-align: center; 
+}
+
+#header_left_container, #header_center_container, #header_right_container {
+    flex: 1;
+}
+
+#header_left_container {
+    text-align: left;
+}   
+#header_center_container {
+    text-align: center;
+}
+#header_right_container {
+    text-align: right;
+}
+
+
+
+
+
+
+
+
+
+body { 
+    margin: 0; 
+    font-family: Arial, sans-serif; 
+}
+.container { width: 90%; max-width: 1200px; margin: 30px auto; }
+
+.upper-part, .middle-part { 
+    background: #f4f4f4; 
+    padding: 30px; 
+    margin-bottom: 20px; 
+    border-radius: 8px; }
