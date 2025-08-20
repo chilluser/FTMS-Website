@@ -2,7 +2,8 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Homepage</title>
+    <title>FTMS - Homepage</title>
+    <link rel="icon" type="image/avif" href="{{ asset('images/icon.avif') }}">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="{{ asset('css/main.css') }}">
 </head>
@@ -13,25 +14,26 @@
             <!-- Left header side container -->
             <div id = "header_left_container">
                 <div>
-                    <h2>MODPACKS</h2>
+                    <button>MODPACKS</button>
                 </div>
                 <div class = "right-links">
-                    <h2>HOME</h2>
-                    <h2>NEWS</h2>
+                    <button>HOME</button>
+                    <button>NEWS</button>
                 </div>
             </div>
         
             <!-- Center header container -->
             <div id = "header_center_container">
-                <h1>LOGO HERE</h1>
+                <img src="{{ asset('images/logo.svg') }}" alt="Logo">
+                <!-- <button>LOGO HERE</button> -->
             </div>
 
 
             <!-- Right header side container -->
             <div id = "header_right_container">
                 <div class = "left-links">
-                    <h2>WIKI</h2>
-                    <h2>ABOUT</h2>
+                    <button>WIKI</button>
+                    <button>ABOUT</button>
                 </div>
                 <div class = "right-links">
                     <h2>EYEBALL</h2>
