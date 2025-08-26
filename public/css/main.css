@@ -55,11 +55,14 @@ header, footer {
 #header_left_container {
     display: flex;
     text-align: left;
+    color:#f88105;
 }
 #header_left_container .right-links{
     display: flex;
     margin-left:auto;
-    gap: 20px;
+    gap: 50px;
+    padding-right:30px;
+    color:#f88105;
 }
 
 /*Center Header*/
@@ -76,12 +79,15 @@ header, footer {
 #header_right_container .left-links{
     display: flex;
     margin-right:auto;
-    gap: 20px;
+    gap: 50px;
+    padding-left:30px;
+    color:#f88105;
 }
 #header_right_container .right-links{
     display: flex;
     margin-left:auto;
     gap: 20px;
+    color:#f88105;
 }
 
 
@@ -109,7 +115,33 @@ html, body {
 }*/
 
 /*CONTENT BELOW THE HEADER, DONT TOUCH OR EXPLOSION!*/
-.upper-part, .middle-part { 
+.upper-part {
+    position: relative;
+    background-image: url('/images/front_picture/website-start.avif');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.upper-part::before { /*this shit makes the transparent layer*/
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+        to bottom,
+        rgba(69, 7, 10, 0.2) 0%,
+        rgba(0, 0, 0, 0.5) 100%
+    );
+    z-index: 0;
+    border-radius: 0px; /* match your container if needed */
+}
+
+.upper-part > * {
+    position: relative;
+    z-index: 1;
+}
+
+.middle-part { 
     background: #f4f4f4;
     
     /*padding: 0px;*/ 
@@ -127,4 +159,50 @@ html, body {
 .middle-part .middle-right{
     flex: 0 0 40%;
     background: #6b6b6b;
+}
+
+.upper-container-content{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+
+.upper-container-content-1{
+    font-family: 'Rubik', Arial, sans-serif;
+    font-size: 40px;
+    color: #ffe6c9;
+    text-shadow:
+        5px 5px 0 #f88105,
+        0 0 16px #f88105,
+        0 0 32px #f88105;
+    letter-spacing: 2px;
+    text-align: center;
+}
+.upper-container-content-2{
+    font-family: 'Rubik', Arial, sans-serif;
+    font-size: 25px;
+    color: #ffe6c9;
+    text-shadow:
+        3px 3px 0 #f88105;
+    letter-spacing: 2px;
+    text-align: center;    
+}
+.upper-container-content-3{
+    font-family: 'Rubik', Arial, sans-serif;
+    font-size: 20px;
+    color:#dfc09d;    
+}
+
+.big-round-btn {
+    font-family: 'Rubik', Arial, sans-serif;
+    padding: 25px 30px;
+    font-size: 1.2rem;
+    border-radius: 10px;
+    border: none;
+    background: #7a2323;
+    color: #ffe6c9;
+    font-weight: bold;
+    margin: 0 10px;
+    cursor: pointer;
+    min-width: 180px; 
 }

@@ -6,19 +6,20 @@
     <link rel="icon" type="image/avif" href="{{ asset('images/icon.avif') }}">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="{{ asset('css/main.css') }}">
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <!-- Header Section -->
     <div class = "section section-1">
+        <!-- Header Section -->
         <header class = "header-1">
             <!-- Left header side container -->
             <div id = "header_left_container">
                 <div>
-                    <button>MODPACKS</button>
+                    <h2>MODPACKS</h2>
                 </div>
                 <div class = "right-links">
-                    <button>HOME</button>
-                    <button>NEWS</button>
+                    <h2>HOME</h2>
+                    <h2>NEWS</h2>
                 </div>
             </div>
         
@@ -32,8 +33,8 @@
             <!-- Right header side container -->
             <div id = "header_right_container">
                 <div class = "left-links">
-                    <button>WIKI</button>
-                    <button>ABOUT</button>
+                    <h2>WIKI</h2>
+                    <h2>ABOUT</h2>
                 </div>
                 <div class = "right-links">
                     <h2>EYEBALL</h2>
@@ -43,8 +44,23 @@
         </header>
         <!-- Upper Part Container -->
         <div class="container upper-part">
-            <h2>Upper Part</h2>
-            <p>This is the upper part of the homepage. Slogan and/or main background goes here with two buttons</p>
+            <div class="upper-container-content upper-container-content-1">
+                <h1>
+                    Forgotten Time
+                    <br>
+                    Minecraft Servers
+                </h1>
+            </div>
+            <div class="upper-container-content upper-container-content-2">   
+                <h2>Season 0 | The Beginning</h2>
+            </div>
+            <div class="upper-container-content upper-container-content-3">
+                <h3>"Find joy in the process, not just the end result."</h3>
+            </div>
+            <div class="upper-container-content upper-container-content-4">
+                <button class="big-round-btn">Getting Started</button>
+                <button class="big-round-btn">Modpack List</button>
+            </div>
         </div>
     </div>
 
